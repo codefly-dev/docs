@@ -1,29 +1,138 @@
-{#-
-  This file was automatically generated - do not edit
--#}
-{% extends "main.html" %}
-{% block tabs %}
-  {{ super() }}
-  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-  <section class="mdx-container">
-    <div class="md-grid md-typeset">
-      <div class="mdx-hero">
-        <div class="mdx-hero__image">
-          <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
-        </div>
-        <div class="mdx-hero__content">
-          <h1>Technical documentation that just works</h1>
-          <p>{{ config.site_description }}. Set up in 5 minutes.</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-            Quick start
-          </a>
-          <a href="{{ 'insiders/' | url }}" title="Material for MkDocs Insiders" class="md-button">
-            Get Insiders
-          </a>
-        </div>
+{% extends "base.html" %} {% block content %}
+<div>
+  {{ page.content }}
+
+  <div class="launch-cards">
+    <div class="launch-card">
+      <div class="card-content">
+        <h2 id="getting-started">Getting started</h2>
+        <p>Learn about Codefly and its fundamental concepts.</p>
+        <ul>
+          <li>
+            <a href="/docs/home">Why Codefly?</a>
+          </li>
+          <li>
+            <a href="/docs/home">Components of a cluster</a>
+          </li>
+          <li>
+            <a href="/docs/home">The Codefly API</a>
+          </li>
+          <li>
+            <a href="/docs/home">Objects In Codefly</a>
+          </li>
+          <li>
+            <a href="/docs/home">Containers</a>
+          </li>
+          <li>
+            <a href="/docs/home">Workloads and Pods</a>
+          </li>
+        </ul>
+
+        <a href="/docs/concepts/overview">
+          <button class="md-button" aria-label="Getting started">
+            View Concepts
+          </button>
+        </a>
       </div>
     </div>
-  </section>
+    <div class="launch-card">
+      <div class="card-content">
+        <h2 id="try-kubernetes">Try Codefly</h2>
+        <p>Follow tutorials to learn how to deploy applications in Codefly.</p>
+        <ul>
+          <li>
+            <a href="/docs/home">Why Codefly?</a>
+          </li>
+          <li>
+            <a href="/docs/home">Components of a cluster</a>
+          </li>
+          <li>
+            <a href="/docs/home">The Codefly API</a>
+          </li>
+          <li>
+            <a href="/docs/home">Objects In Codefly</a>
+          </li>
+          <li>
+            <a href="/docs/home">Containers</a>
+          </li>
+          <li>
+            <a href="/docs/home">Workloads and Pods</a>
+          </li>
+        </ul>
+
+        <a href="/docs/tutorials/overview">
+          <button class="md-button" aria-label="Getting started">
+            View Tutorials
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="launch-card">
+      <div class="card-content">
+        <h2 id="set-up-a-k8s-cluster">References</h2>
+        <p>Get Codefly running based on your resources and needs.</p>
+        <ul>
+          <li>
+            <a href="/docs/home">Why Codefly?</a>
+          </li>
+          <li>
+            <a href="/docs/home">Components of a cluster</a>
+          </li>
+          <li>
+            <a href="/docs/home">The Codefly API</a>
+          </li>
+          <li>
+            <a href="/docs/home">Objects In Codefly</a>
+          </li>
+          <li>
+            <a href="/docs/home">Containers</a>
+          </li>
+          <li>
+            <a href="/docs/home">Workloads and Pods</a>
+          </li>
+        </ul>
+
+        <a href="/docs/references/overview">
+          <button class="md-button" aria-label="Getting started">
+            View Reference
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+<style>
+  .launch-cards {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .launch-cards ul {
+    list-style: none;
+    margin: 0 !important;
+    margin-bottom: 30px !important;
+    display: flex !important;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .launch-cards ul > li {
+    margin: 0 !important;
+  }
+</style>
+
+<!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+<link rel="stylesheet" href="{{ 'assets/stylesheets/custom.css' | url }}" />
+{% endblock %}
+
+<!-- Theme-related JavaScript -->
+{% block scripts %} {{ super() }}
+
+<!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+<script src="{{ 'assets/javascripts/custom.js' | url }}"></script>
+{% endblock %}
