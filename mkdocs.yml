@@ -184,6 +184,10 @@ nav:
           - Overview: getting-started/overview.md
       - Concepts:
           - Overview: concepts/overview.md
+          - Project: concepts/project.md
+          - Application: concepts/application.md
+          - Service: concepts/service.md
+          - Endpoint: concepts/endpoint.md
       - Tutorials:
           - Overview: tutorials/overview.md
       - References:
