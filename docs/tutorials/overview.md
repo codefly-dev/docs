@@ -69,11 +69,22 @@ codefly run service
 
 ### Add a dependency
 
-Go to the frontend service and run
+Go to the frontend service, or change the context of `codefly` back and run
+```shell
+codefly context switch application
+```
 
 ```shell
-codefly add depependency
+codefly add dependency
 ```
+
+Run again, now it will automatically run the server as well!
+
+> Hot-reloading only works in stand-alone mode, will be fixed SOOON.
+
+### CLI Frontend
+
+You can get a good view of your projects by going to http://localhost:10001
 
 
 
