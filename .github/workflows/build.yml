@@ -22,14 +22,14 @@ name: build
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
   release:
     types:
       - published
 
 env:
-  NODE_VERSION: 21.x
+  NODE_VERSION: 18.x
   PYTHON_VERSION: 3.x
 
 permissions:
