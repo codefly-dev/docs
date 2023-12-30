@@ -184,6 +184,7 @@ nav:
           - Overview: getting-started/overview.md
       - Concepts:
           - Overview: concepts/overview.md
+          - Agent: concepts/agent.md
           - Project: concepts/project.md
           - Application: concepts/application.md
           - Service: concepts/service.md
