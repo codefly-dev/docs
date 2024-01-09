@@ -190,6 +190,6 @@ nav:
           - Service: concepts/service.md
           - Endpoint: concepts/endpoint.md
       - Tutorials:
-          - Overview: tutorials/overview.md
+          - Overview: tutorials/openai/openai.md
       - References:
           - Overview: references/overview.md
