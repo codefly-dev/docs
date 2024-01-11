@@ -24,10 +24,15 @@ Tech stack:
 - `go` server for User Management
 - AWS RDS for storage
 
-Let's get started by creating a project `memento` and an application `user_management`:
+Let's get started by creating a project `memento`:
 
 ```shell
 codefly add project memento
+```
+
+Now, let's create an application that will contain all services required for proper user management:
+
+```shell
 codefly add application user_management
 ```
 
@@ -36,6 +41,24 @@ codefly add application user_management
 
 ```shell
 codefly context
+```
+
+Navigate to your project (or application or service) code:
+
+```shell
+codefly open project
+```
+
+> Note: it will open VS Code, but you can specify your favorite editor like this `--editor=goland`.
+
+In particular, you will see that there is `providers/local` folder: this will contain credentials used for local environment.
+
+Copy there your Auth0 configuration `auth0.env` there:
+```env
+AUTH0_ISSUER_BASE_URL=xxx
+AUTH0_CLIENT_ID=xxx
+AUTH0_CLIENT_SECRET=xxx
+...
 ```
 
 Now, let's start the actual work:
