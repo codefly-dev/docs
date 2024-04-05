@@ -28,6 +28,7 @@ site_description: >-
 # Repository
 repo_name: codefly-dev/docs
 repo_url: https://github.com/codefly-dev/docs
+edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; 2023 codefly.dev
