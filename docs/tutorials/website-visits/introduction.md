@@ -101,3 +101,9 @@ const url = routing(
 The CLI output is nice but it will quickly get quite busy. So `codefly` comes with its own frontend to help you developing.
 
 Just add the `--server` flag will run a `gRPC/http` server with the CLI.
+
+![frontend-cli](../../assets/images/tutorials/website-visits/cli_frontend.png)
+
+You can see in a glance the structure of your project. For example, clicking on one application will show you the services running and their dependencies
+
+![frontend-cli-deps](../../assets/images/tutorials/website-visits/cli_frontend_application.png)
