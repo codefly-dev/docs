@@ -107,3 +107,7 @@ Just add the `--server` flag will run a `gRPC/http` server with the CLI.
 You can see in a glance the structure of your project. For example, clicking on one application will show you the services running and their dependencies
 
 ![frontend-cli-deps](../../assets/images/tutorials/website-visits/cli_frontend_application.png)
+
+The companion also provides a convenient way to test your REST endpoints:
+
+![frontend-cli-rest](../../assets/images/tutorials/website-visits/frontend-cli-rest.gif)
