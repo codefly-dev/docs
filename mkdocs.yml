@@ -194,3 +194,7 @@ nav:
           - Overview: tutorials/openai/openai.md
       - References:
           - Overview: references/overview.md
+  - Developer:
+      - Introduction:
+          - Definitions: developers/definitions.md
+          - Code Structure: developers/code_structure.md

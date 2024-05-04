@@ -1,4 +1,4 @@
-name: ci
+name: deploy
 on:
   push:
     branches:
@@ -26,6 +26,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install -r requirements.txt
-      - name: Add CNAME
-        run: echo 'docs.codefly.dev' > site/CNAME
       - run: mkdocs gh-deploy --force
