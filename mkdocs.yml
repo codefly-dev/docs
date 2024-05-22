@@ -24,6 +24,9 @@ site_url: https://codefly-dev.github.io/docs/
 site_author: codefly.dev
 site_description: >-
   Modern way to build modern applications
+extra_files:
+  - 'CNAME'
+
 
 # Repository
 repo_name: codefly-dev/docs
