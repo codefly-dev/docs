@@ -182,6 +182,7 @@ nav:
   - Documentation:
       - Home: home.md
       - Getting started:
+          - Installation: getting-started/installation.md
           - Overview: getting-started/overview.md
       - Concepts:
           - Overview: concepts/overview.md
