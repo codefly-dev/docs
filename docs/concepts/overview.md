@@ -20,7 +20,7 @@ A project is made of Applications.
 
 > **Example**: A project could correspond to your monorepo in your company.
 
-[Details](project.md)
+[Details](workspace)
 
 ### Application
 
@@ -28,7 +28,7 @@ An application is a group of services that work together to provide some functio
 
 > **Important** Behavior for an application is provided **only** by its services. This happens when some service endpoints are declared with an **application** visibility.
 
-[Details](application.md)
+[Details](module)
 
 > **Note** An application corresponds closely with the concept of "Bounded Context" in Domain-Driven Design.
 

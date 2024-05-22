@@ -187,8 +187,8 @@ nav:
       - Concepts:
           - Overview: concepts/overview.md
           - Agent: concepts/agent.md
-          - Project: concepts/project.md
-          - Application: concepts/application.md
+          - Workspace: concepts/workspace.md
+          - Module: concepts/module.md
           - Service: concepts/service.md
           - Endpoint: concepts/endpoint.md
       - Tutorials:
